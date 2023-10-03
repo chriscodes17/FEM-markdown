@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --orangeColor: #e46643;
+  --lightgrayColor: #f5f5f5;
+  --grayColor: #e4e4e4;
+  --darkgrayColor: #7c8187;
+  --textSecondColor: #7c8187;
+  --textMainColor: #35393f;
+  --txtArea: #35393f;
+  --modalbackground: white;
+
+  --roboto: "Roboto", sans-serif;
+  --robotoSlab: "Roboto Slab", serif;
+  --robotoMono: "Roboto Mono", monospace;
+
+  --mainBackground: white;
+  --secondaryBackgroud: #f5f5f5;
+  --blockBackground: #f5f5f5;
+}
+
+[data-theme="dark"] {
+  --textMainColor: white;
+  --mainBackground: #151619;
+  --secondaryBackgroud: #1d1f22;
+  --blockBackground: #2b2d31;
+  --textSecondColor: #c1c4cb;
+  --txtArea: #c1c4cb;
+}
+
+.app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.actionButton {
+  height: 40px;
+  background-color: var(--orangeColor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  gap: 10px;
+}

@@ -1,0 +1,194 @@
+h1 {
+  color: var(--textMainColor);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: var(--textMainColor);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h3 {
+  color: var(--textMainColor);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h4 {
+  color: var(--textMainColor);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h5 {
+  color: var(--textMainColor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h6 {
+  color: var(--orangeColor);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a {
+  color: var(--textMainColor);
+}
+
+li {
+  color: var(--textSecondColor);
+}
+
+.noFiles-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollable p {
+  color: var(--textSecondColor);
+}
+
+.editor {
+  display: flex;
+  height: 100%;
+}
+
+.column {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  background-color: var(--mainBackground);
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  overflow-y: auto;
+  font-family: var(--robotoMono);
+  background-color: var(--mainBackground);
+  color: var(--txtArea);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.left-column {
+  border-right: 1px solid #5A6069;
+}
+
+.banner {
+  background-color: var(--secondaryBackgroud);
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: var(--roboto);
+}
+
+.banner p {
+  margin: 0;
+  color: var(--darkgrayColor);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.displayBtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scrollable {
+  height: 85%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.markdown {
+  margin: 0 auto;
+  width: 672px;
+}
+
+.reactMarkdown {
+  background-color: var(--mainBackground);
+  font-family: var(--robotoSlab);
+}
+
+.reactMarkdown li::marker {
+  color: var(--orangeColor);
+}
+
+blockquote {
+  border-left: 4px solid var(--orangeColor);
+  background-color: var(--blockBackground);
+  margin: 0;
+}
+
+blockquote p {
+  color: var(--textMainColor) !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  padding: 0.5rem;
+}
+
+code {
+  color: var(--textMainColor);
+}
+
+pre {
+  background-color: var(--blockBackground);
+  padding: 1rem;
+}
+
+.displayBtn.textArea {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hidePreview {
+    display: none;
+  }
+
+  .displayBtn.textArea {
+    display: block;
+  }
+  .markdown {
+    width: 335px;
+  }
+}

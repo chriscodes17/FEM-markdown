@@ -1,6 +1,6 @@
 import Modal from "react-modal";
 import { useMarkdownEditor } from "../context/MarkdownEditorContext";
-import "../styles/modalComp.css";
+import "../styles/ModalComp.css";
 
 export default function ModalComp({ modalStatus, closeModal, fileTitle }) {
   const { deleteFile } = useMarkdownEditor();
